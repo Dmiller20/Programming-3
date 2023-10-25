@@ -46,4 +46,21 @@ int main( )
     
     printList(bigList);
 
+    // sorting the list smallest to biggest
+    bigList.sort();
+    printList(bigList);
+
+    //sorting the list biggest to smallest
+    bigList.reverse();
+    printList(bigList);
+
+    //because the last thing we did was reverse the iterator, we can use the normal begin and end fucntions to continue to print out the values in reverse order
+    
+    for(std::list<int>::iterator itConst = bigList.begin(); itConst != bigList.end(); itConst++)
+    {
+        std::cout << "Order: " << *itConst << std::endl;
+
+    }
+
     return 0;
+}
