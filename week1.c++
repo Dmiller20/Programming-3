@@ -1,3 +1,5 @@
+//THIS IS A PRACTICE FUNCTION WITH STD::LIST
+
 #include <iostream>
 #include <list>
 #include <cstring>
