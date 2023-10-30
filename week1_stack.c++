@@ -2,6 +2,7 @@
 #include <stack>
 
 // THIS IS A PRACTICE FUNCTION WITH STD::STACK
+// stack = LIFO (Last in First out)
 void printStack(std::stack<int> copy)
 {
 
