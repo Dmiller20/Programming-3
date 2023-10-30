@@ -2,11 +2,25 @@
 #include <stack>
 
 // THIS IS A PRACTICE FUNCTION WITH STD::STACK
+void printStack(std::stack<int> copy)
+{
+
+    // While container (bigStack) is NOT empty, print out the top of the stack until it is empty!
+     while(!copy.empty())
+    {
+        std::cout << "==============" << std::endl;
+        int result = copy.top();
+        copy.pop();
+        std::cout << "BigStack: " << result << std::endl;
+    }
+
+}
 
 
 int main()
-{
-    std::stack<int> bigStack;
+{   
+    //because it's a constructer, if you want to initilize an array, be sure to encase the array with a parentheses
+    std::stack<int> bigStack ({-2, -1, 0, 10});
 
     bigStack.push(1);
     bigStack.push(2);
@@ -20,7 +34,8 @@ int main()
     bigStack.pop();
     std::cout << "Top: " << bigStack.top() << std::endl;
 
+   printStack(bigStack);
+
 
     return 0;
 }
-
