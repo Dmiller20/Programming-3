@@ -4,7 +4,7 @@
 
 void reverse(std::string x)
 {
-    if (x.size() == 0)
+    if (!x.size())
 
         return;
         std::string r = x.substr(1);
