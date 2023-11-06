@@ -23,25 +23,14 @@ int bSearch(int arr[], int i, int r, int x)
 
 int main()
 {
-int arr[] = {42, 31, 1, 15, 7, 9, 10};
-int x = 1;
-int n = sizeof(arr) / sizeof(arr[0]);
-int result = bSearch(arr, 0, n - 1, x);
-(result == -1)
 
-    if (result != x)
-    {
-        std::cout << "Element is not present in array"
-        return 1;
+ int arr[] = {42, 31, 1, 15, 7, 9, 10};
+ int x = 1;
+ int n = sizeof(arr) / sizeof(arr[0]);
+ int result = bSearch(arr, 0, n - 1, x);
 
-        else()
-        {
-            std::cout << "Element is present at index " << result;
-
-        }
-
-    };
-
+   (result == -1)
+        ? std::cout << "Element is not present in array"
+        : std::cout << "Element is present at index " << result;
     return 0;
 }
-
