@@ -10,11 +10,11 @@ int bSearch(int arr[], int i, int r, int x)
         if (arr[mid] == x) // if the element is present at the middle
             return mid;
 
-        if (arr[mid] > x) // if the element is smaller than mid
-            return bSearch(arr, i, mid - 1, x);
+        if (arr[mid] < x) // if the element is smaller than mid
+            return bSearch(arr, i, mid + 1, x);
 
 
-        return bSearch(arr, mid + 1, r, x); // else, the element is present
+        return bSearch(arr, mid - 1, r, x); // else, the element is present
                                             // in right subarray
     }
 
